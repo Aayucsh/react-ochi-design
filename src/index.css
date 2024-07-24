@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.underline-animation{
+    position: relative;
+  }
+  
+  .underline-animation::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0.7px;
+    background-color: #111;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .underline-animation:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+
+  @font-face {
+    font-family: "Founders Grotesk X-Cond SmBd";
+    src: url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.eot");
+    src: url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.svg#Founders Grotesk X-Cond SmBd") format("svg");
+}
+
+
+h1 {
+    font-family: "Founders Grotesk X-Cond SmBd", sans-serif; 
+}
