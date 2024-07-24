@@ -25,14 +25,17 @@
     }
   }
 
-  @font-face {
-    font-family: "Founders Grotesk X-Cond SmBd";
-    src: url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.eot");
-    src: url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.eot?#iefix") format("embedded-opentype"),
-         url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.woff2") format("woff2"),
-         url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.woff") format("woff"),
-         url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.ttf") format("truetype"),
-         url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.svg#Founders Grotesk X-Cond SmBd") format("svg");
+@font-face {
+  font-family: "Founders Grotesk X-Cond SmBd";
+  src: url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.eot");
+  src: url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.eot?#iefix") format("embedded-opentype"),
+       url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.woff") format("woff"),
+       url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.ttf") format("truetype"),
+       url("https://db.onlinewebfonts.com/t/2b84539c32b7d1a739b9651ad495b4ef.svg#Founders Grotesk X-Cond SmBd") format("svg");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
 }
 
 
