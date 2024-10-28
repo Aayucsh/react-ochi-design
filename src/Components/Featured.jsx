@@ -16,27 +16,74 @@ function Featured() {
     visible: { y: "0%" }
   };
   return (
-    <div className='h-[200vh] w-full'>
-      <h1 className='text-6xl px-12 pt-20 pb-8 border-b-2 font-["Neue_Montreal"] '>Featured projects</h1>
-      <div className=' relative flex justify-between w-full px-14 py-16 '>
-        <div onMouseEnter={() => setIsHovered1(true)} onMouseLeave={() => setIsHovered1(false)} className='w-1/2 rounded-xl overflow-hidden mr-2 '>
-        <div  className='absolute z-[9] overflow-hidden  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'><motion.h1 initial="hidden" animate={isHovered1 ? "visible" : "hidden"} variants={variants} transition={{ease:[0.22, 1, 0.36, 1]}} className='text-9xl text-[#CDEA68] '>FYDE</motion.h1></div>
-        <img src={img2} className='w-full'/>
-        </div>
-        <div onMouseEnter={() => setIsHovered2(true)} onMouseLeave={() => setIsHovered2(false)} className='w-1/2 rounded-xl overflow-hidden ml-2'>
-        <div  className='absolute z-[9] overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'><motion.h1 initial="hidden" animate={isHovered2 ? "visible" : "hidden"} variants={variants} transition={{ease:[0.22, 1, 0.36, 1]}} className='text-9xl text-[#CDEA68] '>VIBE</motion.h1></div>
-        <img src={img3} className='w-full' /></div>
-      </div>
-      <div className=' relative flex justify-between w-full px-14 py-16 '>
-        <div onMouseEnter={() => setIsHovered3(true)} onMouseLeave={() => setIsHovered3(false)} className='w-1/2 rounded-xl overflow-hidden mr-2 '>
-        <div  className='absolute z-[9] overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'><motion.h1 initial="hidden" animate={isHovered3 ? "visible" : "hidden"} variants={variants} transition={{ease:[0.22, 1, 0.36, 1]}} className='text-9xl text-[#CDEA68] '>TRAWA</motion.h1></div>
-        <img src={img4} className='w-full'/>
-        </div>
-        <div onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)} className='w-1/2 rounded-xl overflow-hidden ml-2'>
-        <div  className='absolute z-[9] overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'><motion.h1 initial="hidden" animate={isHovered4 ? "visible" : "hidden"} variants={variants} transition={{ease:[0.22, 1, 0.36, 1]}} className=' text-9xl text-[#CDEA68] '>PREMIUM BLEND</motion.h1></div>
-        <img src={img5} className='w-full' /></div>
-      </div>
+    <div className='min-h-screen w-full'>
+      <h1 className='text-3xl md:text-5xl sm:text-4xl px-3 md:px-12 sm:px-6 pt-8 sm:pt-20 pb-8 border-b-2 font-["Neue_Montreal"]'>
+        Featured projects
+      </h1>
       
+      <div className='relative flex flex-col md:flex-row justify-between w-full px-6 py-8 gap-8 md:gap-4'>
+        <div onMouseEnter={() => setIsHovered1(true)} onMouseLeave={() => setIsHovered1(false)} 
+          className='w-full md:w-1/2 rounded-lg overflow-hidden'>
+          <div className='absolute z-[9] overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <motion.h1 
+              initial="hidden" 
+              animate={isHovered1 ? "visible" : "hidden"} 
+              variants={variants} 
+              transition={{ease:[0.22, 1, 0.36, 1]}} 
+              className='text-9xl md:text-7xl sm:text-5xl text-[#CDEA68]'>
+              FYDE
+            </motion.h1>
+          </div>
+          <img src={img2} className='w-full' alt="FYDE"/>
+        </div>
+
+        <div onMouseEnter={() => setIsHovered2(true)} onMouseLeave={() => setIsHovered2(false)} 
+          className='w-full md:w-1/2 rounded-lg overflow-hidden'>
+          <div className='absolute z-[9] overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <motion.h1 
+              initial="hidden" 
+              animate={isHovered2 ? "visible" : "hidden"} 
+              variants={variants} 
+              transition={{ease:[0.22, 1, 0.36, 1]}} 
+              className='text-9xl md:text-7xl sm:text-5xl text-[#CDEA68]'>
+              VIBE
+            </motion.h1>
+          </div>
+          <img src={img3} className='w-full' alt="VIBE"/>
+        </div>
+      </div>
+
+      <div className='relative flex flex-col md:flex-row justify-between w-full px-6 py-8 gap-8 md:gap-4'>
+        <div onMouseEnter={() => setIsHovered3(true)} onMouseLeave={() => setIsHovered3(false)} 
+          className='w-full md:w-1/2 rounded-lg overflow-hidden'>
+          <div className='absolute z-[9] overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <motion.h1 
+              initial="hidden" 
+              animate={isHovered3 ? "visible" : "hidden"} 
+              variants={variants} 
+              transition={{ease:[0.22, 1, 0.36, 1]}} 
+              className='text-9xl md:text-7xl sm:text-5xl text-[#CDEA68]'>
+              TRAWA
+            </motion.h1>
+          </div>
+          <img src={img4} className='w-full' alt="TRAWA"/>
+        </div>
+
+        <div onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)} 
+          className='w-full md:w-1/2 rounded-lg overflow-hidden'>
+          <div className='absolute z-[9] overflow-hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <motion.h1 
+              initial="hidden" 
+              animate={isHovered4 ? "visible" : "hidden"} 
+              variants={variants} 
+              transition={{ease:[0.22, 1, 0.36, 1]}} 
+              className='text-9xl md:text-7xl sm:text-5xl text-[#CDEA68]'>
+              PREMIUM BLEND
+            </motion.h1>
+          </div>
+          <img src={img5} className='w-full' alt="PREMIUM BLEND"/>
+        </div>
+      </div>
     </div>
   )
 }
