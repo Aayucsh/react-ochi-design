@@ -9,7 +9,7 @@ function Cards() {
       
       <div className="flex items-center justify-center w-full lg:w-1/2 h-96 bg-[#004D43] relative rounded-xl">
         <img src={logo1} className="w-auto h-auto max-w-full" />
-        <button className="absolute bottom-8 left-8 px-2 py-0.5 rounded-full border-2 text-[#CDEA68] border-[#CDEA68]">
+        <button className="absolute bottom-3 left-4 px-2 py-0.5 rounded-full border-2 text-[#CDEA68] border-[#CDEA68]">
           2019-2022
         </button>
       </div>
@@ -18,13 +18,13 @@ function Cards() {
       <div className="w-full lg:w-1/2 h-96 flex flex-col sm:flex-row gap-4">
         <div className="relative w-full sm:w-1/2 h-full bg-[#212121] rounded-xl flex items-center justify-center">
           <img src={logo2} className="w-auto h-auto max-w-full" />
-          <button className="absolute bottom-8 left-8 px-2 py-0.5 rounded-full border-2 border-zinc-100 text-zinc-100 uppercase text-sm">
+          <button className="absolute bottom-3 left-4 px-2 py-0.5 rounded-full border-2 border-zinc-100 text-zinc-100 uppercase text-sm">
             rating 5.0 on clutch
           </button>
         </div>
         <div className="relative w-full sm:w-1/2 h-full bg-[#212121] rounded-xl flex items-center justify-center">
           <img src={logo3} className="w-auto max-w-[100px]" alt="" />
-          <button className="absolute bottom-8 left-2 px-2 py-0.5 rounded-full border-2 border-zinc-100 text-zinc-100 uppercase text-sm">
+          <button className="absolute bottom-3 left-4 px-2 py-0.5 rounded-full border-2 border-zinc-100 text-zinc-100 uppercase text-sm">
             business bootcamp alumini
           </button>
         </div>
